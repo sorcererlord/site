@@ -1,0 +1,111 @@
+.signupContainer {
+    background-color: black;
+    height: 50vh;
+    min-height: 600px;
+}
+
+.querySection {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+
+    width: 17vw;
+    min-width: 500px;
+
+    h2 { 
+        color: white;
+        margin-bottom: 4vh;
+        font-size: 35px;
+    }
+
+    ::placeholder {
+        color: #5D5D5D;
+        font-size: 10px;
+    }
+
+    .query {
+        margin: 0;
+        padding: 1vh 0.6vw;
+
+        border: 0.01vw solid white;
+        color: white;
+
+        width: 4.4vw;
+        min-width: 75px;
+
+        margin-top: 0.7vh;
+
+        font-size: 10px;
+    }
+}
+
+.queryInput {
+    border: 0.01vw solid #5D5D5D;
+    background-color: black;
+
+    width: 15vw;
+    min-width: 200px;
+
+    height: 3vh;
+    min-height: 20px;
+
+    margin-bottom: 1vh;
+
+    text-indent: 0.7vw;
+    color: white;
+}
+
+.querySection1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 15vw;
+    min-width: 200px;
+
+    h2 {
+        font-size: 35px;
+        color: white;
+    }
+
+    p {
+        color: #848484;
+        margin-bottom: 0;
+        font-size: 8px;
+    }
+
+}
+
+.phoneNumber {
+    font-family: 'SFProDisplay';
+    font-size: 18px;
+    margin-top: 2vh;
+    color: white;
+    margin-bottom: 0.6vh;
+}
+
+.queryContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media all and (max-width: 900px) {
+    .queryContainer {
+        flex-direction: column;
+    }
+
+    .querySection, .querySection1 {
+        padding: 0;
+        margin: 0;
+        margin-left: 1vw;
+
+        width: 80vw;
+        min-width: 320px;
+    }
+
+    .queryInput {
+        width: 50vw;
+    }
+}

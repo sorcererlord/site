@@ -1,0 +1,213 @@
+.charContainer {
+    justify-content: left;
+    height: 70vh;
+    min-height: 1000px;
+}
+
+.charWrapper {
+    margin-left: 5vw;
+}
+
+
+.trBottomBorder {
+    border-collapse: collapse;
+    text-align: left;
+
+    tr {
+        border-bottom: 1px solid #C4C4C4;
+    }    
+
+    th {
+        padding-right: 30vw;
+    }
+
+    td {
+        font-size: 14px;
+        width: 45vw;
+    }
+    
+    padding-bottom: 1vh;
+    padding-top: 2vh;
+}
+
+.left {
+    display: block; 
+    text-align: left;
+}
+
+.apartment {
+    display: flex;
+
+    height: 30vh;
+    min-height: 600px;
+
+    div {
+        text-align: left;
+    }
+}
+
+.apartmentRight {
+    margin-right: 3vw;
+    min-width: 440px;
+}
+.apartmentLeft {
+    margin-left: 3vw;
+    min-width: 440px;
+}
+
+.room1 {
+    width: 20vw;
+    min-width: 470px;
+    height: 31vh;
+    min-height: 430px;
+}
+
+.room2 {
+    width: 20vw;
+    min-width: 470px;
+    height: 31vh;
+    min-height: 430px;
+}
+
+.characteristicsH2 {
+    text-align: left;
+}
+
+@media all and (max-height: 1000px) and (min-width: 900px) {
+    #apartments {
+        min-height: 500px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .room1, .room2 {
+        min-width: 400px;
+        min-height: 350px;
+    }
+
+    .room1 {
+        margin-right: 2vw;
+    }
+    .room2 {
+        margin-left: 2vw;
+    }
+
+    .apartmentLeft {
+        margin-right: 2.5vw;
+        min-width: 200px;
+    }
+    .apartmentRight {
+        margin-left: 2.5vw;
+        min-width: 200px;
+    }
+
+
+    .apartment {
+        div {
+            min-width: 250px;
+        }
+    }
+    .aparment-query {
+        padding: 0;
+        margin: auto;
+
+        width: 30vw;
+        min-width: 110px;
+
+        padding: 3% 10%;
+    }
+
+    .trBottomBorder {
+        th {
+            padding-right: 20vw;
+        }
+    }
+}
+
+@media all and (max-width: 640px) {
+    .charMediaTableContainer {
+        display: block;
+        overflow: auto;
+
+        height: 700px;
+    }
+
+    .characteristicsH2 {
+        position: sticky;
+    }
+
+    .charWrapper {
+        max-height: 800px;
+    }
+
+    .apartment {
+        display: grid;
+
+        height: 40vh;
+        min-height: 700px;
+    }
+    .apartmentLeft,  .apartmentRight {
+        padding: 0;
+        margin: 0;
+
+        margin-top: 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+
+        width: 95vw;
+        
+        grid-row: 2;
+    }
+
+    .apartmentRight {
+        margin-bottom: 20vh;
+    }
+
+    .room1, .room2 {
+        padding: 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-bottom: 0;
+        align-self: flex-end;
+
+        width: 95vw;
+        min-width: 350px;
+
+        height: 40vh;
+        min-height: 350px;
+        max-height: 450px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .trBottomBorder {
+        tr {
+            border: none;
+        }
+    }
+
+    .apartment-query {
+        width: 95vw;
+    }
+
+    .styleMediaTable tr:nth-child(2n) {
+        border-bottom: 1px solid #C4C4C4;
+        border-collapse: collapse;
+
+        td {
+            width: 85vw;
+
+            padding-top: 0.1vh;
+            padding-bottom: 0.5vh;
+        }
+    }
+    .styleMediaTable tr:nth-child(2n + 1) {
+        th {
+            padding-top: 2vh;
+
+        }
+    }
+
+
+}

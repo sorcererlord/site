@@ -1,0 +1,116 @@
+.fImageContainer {
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.5)100%), url("./images/image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+    height: 100vh;
+    min-height: 400px;
+
+
+    h1 { 
+        color: #FFFFFF;
+    }
+}
+
+.sidebar-button {
+    align-self: center;
+    justify-self: flex-start;
+
+    width: 3vw;
+    height: 3vh;
+
+    margin-left: 2vw;
+
+    color: #BBBBBB;
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.sidebar-a {
+    align-self: center;
+    justify-self: flex-start;
+
+    margin-left: 2vw;
+}
+
+.introductory-header {
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 10vh;
+}
+
+.phone { 
+    color: #FFFFFF;
+    font-family: SFProDisplay;
+    font-size: 16px;
+
+    align-self: center;
+}
+
+.tabletPhone {
+    color: #FFFFFF;
+
+    font-family: SFProDisplay;
+    font-size: 24px;
+}
+
+.redirect {
+    color: #FFFFFF;
+    background-color: transparent;
+    font-family: 'SFProDisplay';
+    font-size: 16px;
+
+    border: 0.01vw solid #FFFFFF;
+
+    padding: 0.9vh 2vw;
+    margin-left: 2vw;
+
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+    }
+}
+
+.float-right{
+    display: flex;
+
+    align-self: center;
+    margin-left: auto;
+
+    margin-right: 2vw;
+}
+
+.tabletSignup {
+    color: #FFFFFF;
+    background-color: transparent;
+    font-family: 'SFProDisplay';
+    border: 0.01vw solid #FFFFFF;
+    padding: 15px 100px;
+    font-size: 18px;
+
+    margin-top: 1vh;
+
+    &:hover { 
+        cursor: pointer;
+        background-color: black;
+    }
+}
+
+.positioning {
+    position: relative;
+    top: 45%;
+}
+
+@media all and (max-width: 900px) {
+    .intrdMediaH2 {
+        font-size: 40px;
+    }
+}
