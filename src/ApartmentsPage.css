@@ -103,8 +103,12 @@
 
 
     .apartment {
-        div {
+        div.textBlock {
             min-width: 250px;
+        }
+
+        div.zoom {
+            min-width: 350px;
         }
     }
     .aparment-query {
