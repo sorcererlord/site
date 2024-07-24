@@ -80,12 +80,12 @@ function Location() {
         <div className="mainContainer grid locContainer">
             <div className="textBlock mediaProjectSection locDiv">
                 <div className="loc-wrapper">
-                    <section className="loc-header modifiedOverflow">
+                    <section className="loc-header">
                         <h2>ЦАО Пресненский район</h2>
                         <h3>ул. Поклонная, 9</h3>
                     </section>
 
-                    <section className="loc-body modifiedOverflow">
+                    <section className="loc-body">
                         <p>
                             Москва-Сити, Центр международной торговли, 
                             известные театры, музеи, лучшие рестораны – центр Москвы – центр притяжения успеха, 

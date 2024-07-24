@@ -25,7 +25,7 @@
 }
 
 .locDiv {
-    width: 75vw;
+    width: 90vw;
     max-width: min-content;
 }
 
@@ -127,7 +127,7 @@
     }
 
     .locSection {
-        width: 95vw;
+        width: 90vw;
     }
 
     .loc-body, .loc-header {
