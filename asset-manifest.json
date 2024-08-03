@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8163a05c.css",
+    "main.js": "/static/js/main.01117c33.js",
+    "static/media/image1.png": "/static/media/image1.c428d42d7a08d26fcf04.png",
+    "static/media/Rectangle 90.png": "/static/media/Rectangle 90.401f030e68895da02c24.png",
+    "static/media/Rectangle 27.png": "/static/media/Rectangle 27.a53571d1f8141d706c77.png",
+    "static/media/Снимок экрана от 2024-05-06 19-04-37.png": "/static/media/Снимок экрана от 2024-05-06 19-04-37.01b5448e02c448647c11.png",
+    "static/media/Rectangle 26.png": "/static/media/Rectangle 26.6ba41df828d3bdeead1f.png",
+    "static/media/Rectangle15.png": "/static/media/Rectangle15.e76d893ea43421fe2ee8.png",
+    "static/media/Rectangle 46.png": "/static/media/Rectangle 46.8b62a1c860174939576c.png",
+    "static/media/SFPRODISPLAYREGULAR.OTF": "/static/media/SFPRODISPLAYREGULAR.d1f5e6e16dd4f75c3950.OTF",
+    "static/media/Rectangle 92.png": "/static/media/Rectangle 92.9cd3f93b86bb3a9563cc.png",
+    "static/media/О проекте.png": "/static/media/О проекте.dff8d519c6ab17e38f18.png",
+    "index.html": "/index.html",
+    "main.8163a05c.css.map": "/static/css/main.8163a05c.css.map",
+    "main.01117c33.js.map": "/static/js/main.01117c33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8163a05c.css",
+    "static/js/main.01117c33.js"
+  ]
+}
