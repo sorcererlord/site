@@ -14,14 +14,12 @@
     max-width: 30%;
     max-height: 30%;
 
-    min-width: 420px;
+    min-width: 500px;
     min-height: 550px;
 }
 
 .towerWrapperMargin {
     max-width: min-content;
-    margin-left: 5vw;
-    margin-top: 15vh;
 }
 
 .locDiv {
@@ -67,7 +65,6 @@
 
 .grid {
     display: flex;
-    flex-direction: column;
 }
 
 .mediaProjectH2 {
@@ -76,6 +73,26 @@
 
 .projectDiv {
     padding-top: 10vh;
+    margin-right: auto;
+
+    h2 { 
+        margin-top: 0;
+    }
+}
+
+.project-wrapper {
+    width: 75vw;
+    min-width: 985px;
+
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#project {
+    height: min-content;
 }
 
 @media all and (max-width: 1366px) {
@@ -87,9 +104,33 @@
     }
 }
 
-@media all and (min-height: 1000px) and (max-width: 900px){
-    #project { 
+@media all and (max-width: 1023px){
+    #project {
+        display: grid;
+        min-height: 1350px;
+    }
+
+    .project-wrapper { 
         overflow: auto;
+        display: grid;
+        align-items: start;
+
+        width: 95vw;
+        min-width: 0;
+
+        height: 100%;
+    }
+
+    .projectDiv { 
+        width: 95vw;
+
+        padding: 0;
+    }
+
+    .towerImg {
+        min-width: 95vw;
+        max-height: min-content;
+
     }
 }
 

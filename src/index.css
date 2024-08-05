@@ -37,30 +37,32 @@
 
 .mainContainer {
   width: 100vw;
-  height: 80vh;
+  height: min-content;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
 
+  
+
   display: flex;
 
-  min-height: 1000px;
   flex: wrap;
 
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
 .textBlock { 
   width: 20vw;
 
-  min-width: 470px;
+  min-width: 500px;
 
   p {
     margin-bottom: 2.5vh;
   }
 
   h2 {
+    margin-top: 0;
     margin-bottom: 4vh;
   }
 }
@@ -76,15 +78,11 @@ html {
 }
 
 .alignLeftPadded {
-  float: left;
   text-align: left;
-  padding-left: 10vw
 }
 
 .alignRightPadded {
-  float: right;
   text-align: left;
-  padding-right: 10vw;
 }
 
 body {
@@ -168,13 +166,6 @@ code {
 @media all and (max-width: 1024px) {
   .textBlock {
     min-width: 400px;
-  }
-
-  .alignLeftPadded {
-    padding-left: 3vw;
-  }
-  .alignRightPadded {
-    padding-right: 3vw;
   }
 
 }

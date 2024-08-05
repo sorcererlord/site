@@ -37,38 +37,40 @@ function AboutProject() {
 
     return (
     <div id='project' className='mainContainer'>
-        <div className='alignLeftPadded textBlock projectDiv'>
-            <h2>О проекте</h2>
-            <p>
-                Вдохновением для создания концепции послужила исходная архитектура
-                самого Дома: геометричные элементы парадного фасада, приковывающие к 
-                себе внимание, светлые и просторные помещения с пятиметровыми потолками, 
-                сразу отсылают к эстетике американского классического ар-деко.
-            </p>
+        <div className="project-wrapper">
+            <div className='alignLeftPadded textBlock projectDiv'>
+                <h2>О проекте</h2>
+                <p>
+                    Вдохновением для создания концепции послужила исходная архитектура
+                    самого Дома: геометричные элементы парадного фасада, приковывающие к 
+                    себе внимание, светлые и просторные помещения с пятиметровыми потолками, 
+                    сразу отсылают к эстетике американского классического ар-деко.
+                </p>
 
-            <p>
-                Его влияние быстро охватило Америку начала 19 века, формировало образ жизни того периода, 
-                который характеризуется бурным экономическим ростом, развитием технологий, машиностроения и строительства 
-                культовых известнейших арх-сооружений, а также развитием киноискусства.
-            </p>
+                <p>
+                    Его влияние быстро охватило Америку начала 19 века, формировало образ жизни того периода, 
+                    который характеризуется бурным экономическим ростом, развитием технологий, машиностроения и строительства 
+                    культовых известнейших арх-сооружений, а также развитием киноискусства.
+                </p>
 
-            <table className="projectTable">
-                <tbody>
-                    {isMobile ? 
-                        <React.Fragment>
-                            <Tbody data={contentMobile} columns={true} thClass='thesis1 trMediaPadding' />
-                            <Tbody data={contentMobile1} columns={true} thClass='thesis1' />
-                        </React.Fragment>
+                <table className="projectTable">
+                    <tbody>
+                        {isMobile ? 
+                            <React.Fragment>
+                                <Tbody data={contentMobile} columns={true} thClass='thesis1 trMediaPadding' />
+                                <Tbody data={contentMobile1} columns={true} thClass='thesis1' />
+                            </React.Fragment>
+                            
+                         : <Tbody data={content} columns={true} thClass='thesis1' />
+                        }
                         
-                     : <Tbody data={content} columns={true} thClass='thesis1' />
-                    }
-                    
-                </tbody>
+                    </tbody>
 
-            </table>
-        </div>
+                </table>
+            </div>
         
-        <BlurredImage src={towerImage} alt='tower' divClassName='towerWrapperMargin' className='towerImg' />
+            <BlurredImage src={towerImage} alt='tower' divClassName='towerWrapperMargin' className='towerImg' />
+        </div>
     </div>
     )
 
