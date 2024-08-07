@@ -46,13 +46,11 @@ function AboutProject() {
                     себе внимание, светлые и просторные помещения с пятиметровыми потолками, 
                     сразу отсылают к эстетике американского классического ар-деко.
                 </p>
-
                 <p>
                     Его влияние быстро охватило Америку начала 19 века, формировало образ жизни того периода, 
                     который характеризуется бурным экономическим ростом, развитием технологий, машиностроения и строительства 
                     культовых известнейших арх-сооружений, а также развитием киноискусства.
                 </p>
-
                 <table className="projectTable">
                     <tbody>
                         {isMobile ? 
@@ -65,10 +63,8 @@ function AboutProject() {
                         }
                         
                     </tbody>
-
                 </table>
             </div>
-        
             <BlurredImage src={towerImage} alt='tower' divClassName='towerWrapperMargin' className='towerImg' />
         </div>
     </div>
@@ -80,7 +76,7 @@ function AboutProject() {
 function Location() {
     return (
         <div className="mainContainer grid locContainer">
-            <div className="textBlock mediaProjectSection locDiv">
+            <div className="textBlock locDiv">
                 <div className="loc-wrapper">
                     <section className="loc-header">
                         <h2>ЦАО Пресненский район</h2>
