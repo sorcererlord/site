@@ -78,7 +78,7 @@
     width: 30vw;
     min-width: 500px;
     text-align: left;
-    margin-right: 10vw;
+    margin-right: 12.5vw;
 
     align-self: center;
     
@@ -126,7 +126,7 @@
 
     align-self: center;
     margin-bottom: 20vh;
-    margin-left: 10vw;
+    margin-left: 12.5vw;
 }
 
 
@@ -137,9 +137,8 @@
         align-self: center;
     }
 
-    .luxContainer {
-        padding-top: 0;
-        min-height: 800px;
+    .lux-wrapper {
+        width: 95vw;
     }
 
     .dashed {
@@ -151,9 +150,6 @@
     }
     .lobImage {
         margin: auto;
-
-        min-width: 500px;
-
         max-width: 100%;
         max-height: 50%;
 
@@ -165,10 +161,6 @@
         display: block;
 
         margin: 0;
-        margin-left: 5vw;
-        margin-bottom: 25vh;
-
-
         text-align: left;
     }
 
@@ -189,12 +181,10 @@
     .styleAlignMarginH2 {
         margin: 0;
         min-width: 320px;
-        margin-right: 5vw;
     }
     .styleAlignMarginSection {
         margin: 0;
         min-width: 320px;
-        margin-right: 5vw;
     }
 
     .fiImage {

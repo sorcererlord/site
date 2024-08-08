@@ -43,31 +43,33 @@
 
 .apartment-wrapper {
     display: flex;
+
+    width: 75vw;
 }
 
 .apartmentRight {
-    margin-right: 3vw;
-    min-width: 440px;
+    margin-right: auto;
+    min-width: 280px;
 
     align-self: center;
 }
 .apartmentLeft {
-    margin-left: 3vw;
-    min-width: 440px;
+    margin-left: auto;
+    min-width: 280px;
 
     align-self: center;
 }
 
 .room1 {
     width: 20vw;
-    min-width: 470px;
+    min-width: 360px;
     height: 31vh;
     min-height: 430px;
 }
 
 .room2 {
     width: 20vw;
-    min-width: 470px;
+    min-width: 360px;
     height: 31vh;
     min-height: 430px;
 }
@@ -78,23 +80,18 @@
 
 @media all and (max-width: 900px) {
     .room1, .room2 {
-        min-width: 400px;
+        width: 50vw;
+        min-width: 340px;
         min-height: 350px;
     }
 
     .room1 {
-        margin-right: 2vw;
     }
     .room2 {
-        margin-left: 2vw;
     }
 
-    .apartmentLeft {
-        margin-right: 2.5vw;
-        min-width: 200px;
-    }
-    .apartmentRight {
-        margin-left: 2.5vw;
+    .apartmentLeft, .apartmentRight {
+        width: 40vw;
         min-width: 200px;
     }
 
