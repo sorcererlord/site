@@ -22,21 +22,23 @@ function Lobby() {
 function Style() {
     return (
         <div className="mainContainer fiContainer">
-            <BlurredImage alt="screenshot" src={towerImage1} className="fiImage" />
+            <div className="style-wrapper">
+                <BlurredImage alt="screenshot" src={towerImage1} className="fiImage" />
 
-            <div className="textBlock whiteText styleDiv alignLeftPadded modifiedOverflow">
-                <h2>Стиль</h2>
+                <div className="textBlock whiteText styleDiv modifiedOverflow">
+                    <h2>Стиль</h2>
 
-                <p>
-                    Главные фасад здания исполнен в неоклассическом стиле с выступающими деталями и большим количеством окон. 
-                    Это четка очерченная композиция из иполированного гранита с 
-                    элементами рустики, крупноформатного крерамогранита и декоратинвными элементами, выполненными на заказ.
-                </p>
-                <p>
-                    В основе интерьеров Дома ARGUS приоритетными являются эстетика, где видимая роскошь 
-                    сочетается с комфортом, в нее идеально вписываются любые технические приборы и устройства. 
-                    Это позволяет создавать действительно актуальные и модные решения в рамках устоявшейся классики.
-                </p>
+                    <p>
+                        Главные фасад здания исполнен в неоклассическом стиле с выступающими деталями и большим количеством окон. 
+                        Это четка очерченная композиция из иполированного гранита с 
+                        элементами рустики, крупноформатного крерамогранита и декоратинвными элементами, выполненными на заказ.
+                    </p>
+                    <p>
+                        В основе интерьеров Дома ARGUS приоритетными являются эстетика, где видимая роскошь 
+                        сочетается с комфортом, в нее идеально вписываются любые технические приборы и устройства. 
+                        Это позволяет создавать действительно актуальные и модные решения в рамках устоявшейся классики.
+                    </p>
+                </div>
             </div>
         </div>
     )
@@ -57,7 +59,7 @@ const arr = createObject([
 function Advantages() {
     return (
         <div className="mainContainer advContainer">
-            <h2 className="alignLeftPadded advH2">Преимущества</h2>
+            <h2 className="advH2">Преимущества</h2>
 
             <div className="listContainer">
                 <List data={arr} ulClass='dashed'/>
@@ -74,7 +76,7 @@ function Luxury() {
 
     return (
         <div className='mainContainer luxContainer' >
-            <section className="lux-container">
+            <section className="lux-wrapper">
                 <BlurredImage src={isMobile ? lobbyImageMobile : lobbyImage1} alt="lobbyImage1" className="lobImage" />
                  
                 <div className="styleTextContainer">

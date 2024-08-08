@@ -19,31 +19,36 @@ function Apartments() {
         <>
         <div className="mainContainer apartment" id='apartments'>
             {isOpen &&  <Modal handleClose={closeModal} isOpen={isOpen}></Modal> }
-            <div className="textBlock apartmentRight" >
-                <h2>Апартаменты</h2>
+            <div className="apartment-wrapper">
+                <div className="textBlock apartmentRight" >
+                    <h2>Апартаменты</h2>
 
-                <p>
-                    Со второго по шестой этаж гармонично спланированы апараменты различной площади от 
-                    35 до 80 м2, жителям каждого из которых гарантирована максимальная приватность и комфорт.
-                </p>
+                    <p>
+                        Со второго по шестой этаж гармонично спланированы апараменты различной площади от 
+                        35 до 80 м2, жителям каждого из которых гарантирована максимальная приватность и комфорт.
+                    </p>
 
-                <button className="query apartment-query" onClick={openModal}>Оставить Заявку</button>
+                    <button className="query apartment-query" onClick={openModal}>Оставить Заявку</button>
+                </div>
+
+                <BlurredImage src={image} alt='room' className="room1" />
             </div>
 
-            <BlurredImage src={image} alt='room' className="room1" />
         </div>
 
         <div className="mainContainer apartment">
-            <BlurredImage src={image1} alt='room' className="room2" />
-            <div className="textBlock apartmentLeft">
-                <h2>Пентхаусы</h2>
+            <div className="apartment-wrapper">
+                <BlurredImage src={image1} alt='room' className="room2" />
+                <div className="textBlock apartmentLeft">
+                    <h2>Пентхаусы</h2>
 
-                <p>
-                    На седьмом этаже Дома предусмотрено несколько пентхаусов. В распоряжении их жителей: высокие потолки 5,5 метров, cвободная 
-                    планировка для создания стильного, торжественного интерьера.
-                </p>
+                    <p>
+                        На седьмом этаже Дома предусмотрено несколько пентхаусов. В распоряжении их жителей: высокие потолки 5,5 метров, cвободная 
+                        планировка для создания стильного, торжественного интерьера.
+                    </p>
 
-                <button className="query apartment-query" onClick={openModal}>Оставить Заявку</button>
+                    <button className="query apartment-query" onClick={openModal}>Оставить Заявку</button>
+                </div>
             </div>
         </div>
         </>

@@ -1,11 +1,9 @@
 .charContainer {
-    justify-content: left;
-    height: 70vh;
-    min-height: 1000px;
+    padding-bottom: 16.5vh;
 }
 
 .charWrapper {
-    margin-left: 5vw;
+    width: 75vw;
 }
 
 
@@ -36,23 +34,28 @@
 }
 
 .apartment {
-    display: flex;
-
-    height: 30vh;
-    min-height: 600px;
+    padding-bottom: 16.5vh;
 
     div {
         text-align: left;
     }
 }
 
+.apartment-wrapper {
+    display: flex;
+}
+
 .apartmentRight {
     margin-right: 3vw;
     min-width: 440px;
+
+    align-self: center;
 }
 .apartmentLeft {
     margin-left: 3vw;
     min-width: 440px;
+
+    align-self: center;
 }
 
 .room1 {
@@ -71,12 +74,6 @@
 
 .characteristicsH2 {
     text-align: left;
-}
-
-@media all and (max-height: 1000px) and (min-width: 900px) {
-    #apartments {
-        min-height: 500px;
-    }
 }
 
 @media all and (max-width: 900px) {
@@ -102,10 +99,8 @@
     }
 
 
-    .apartment {
-        div.textBlock {
-            min-width: 250px;
-        }
+    .apartment-wrapper {
+        width: 95vw;
 
         div.zoom {
             min-width: 350px;
@@ -144,11 +139,8 @@
         max-height: 800px;
     }
 
-    .apartment {
+    .apartment-wrapper {
         display: grid;
-
-        height: 40vh;
-        min-height: 700px;
     }
     .apartmentLeft,  .apartmentRight {
         padding: 0;

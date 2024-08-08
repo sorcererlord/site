@@ -171,11 +171,6 @@ code {
 }
 
 @media all and (max-width: 900px) {
-  .mainContainer {
-    display: grid;
-    min-height: 1000px;
-  }
-
   .textBlock {
     width: 100vw;
     min-width: 320px;

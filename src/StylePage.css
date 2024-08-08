@@ -1,20 +1,24 @@
 .fiContainer {
-    height: 80vh;
     background-color: black;
 
     overflow: auto;
 }
 
-.luxContainer { 
+.style-wrapper {
+    display: flex;
+
+    padding-top: 16.5vh;
+    padding-bottom: 16.5vh;
+
+    width: 75vw;
 
 }
 
 .fiImage {
     width: 20vw;
     min-width: 470px;
-    height: 50vh;
-
-    margin-top: 12vh;
+    height: 75vh;
+    min-height: 550px;
 }
 
 .whiteText { 
@@ -29,6 +33,9 @@
 
 .styleDiv {
     text-align: left;
+    margin-left: auto;
+
+    padding-top: 10vh;
 }
 
 .styleAlignMarginSection {
@@ -51,8 +58,13 @@
     align-items: center;
 }
 
-.lux-container {
-    max-width: min-content;
+.luxContainer {
+    padding-top: 16.5vh;
+    padding-bottom: 16.5vh;
+}
+
+.lux-wrapper {
+    width: 75vw;
 }
 
 .advContainer {
@@ -67,6 +79,8 @@
     min-width: 500px;
     text-align: left;
     margin-right: 10vw;
+
+    align-self: center;
     
 
     ul.dashed > li:before {
@@ -99,7 +113,7 @@
 }
 
 .lobImage {
-    width: auto;
+    width: 75vw;
     min-width: 900px;
     height: auto;
 
@@ -109,8 +123,10 @@
 
 .advH2 {
     margin-right: auto;
+
     align-self: center;
     margin-bottom: 20vh;
+    margin-left: 10vw;
 }
 
 
