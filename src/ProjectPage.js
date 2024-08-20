@@ -76,7 +76,7 @@ function AboutProject() {
 function Location() {
     return (
         <div className="mainContainer grid locContainer">
-            <div className="textBlock locDiv">
+            <div className="locDiv">
                 <div className="loc-wrapper">
                     <section className="loc-header">
                         <h2>ЦАО Пресненский район</h2>

@@ -67,6 +67,20 @@
   }
 }
 
+.main-wrapper {
+  width: 75vw;
+  min-width: 985px;
+
+  padding-bottom: 20vh;
+
+  display: flex;
+
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -161,6 +175,12 @@ a:hover {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media all and (max-width: 1366px) {
+  .main-wrapper {
+    width: 95vw;
+  }
 }
 
 @media all and (max-width: 1024px) {

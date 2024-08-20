@@ -22,7 +22,7 @@ function Lobby() {
 function Style() {
     return (
         <div className="mainContainer fiContainer">
-            <div className="style-wrapper">
+            <div className="main-wrapper">
                 <BlurredImage alt="screenshot" src={towerImage1} className="fiImage" />
 
                 <div className="textBlock whiteText styleDiv modifiedOverflow">
