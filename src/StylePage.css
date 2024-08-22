@@ -13,6 +13,7 @@
     min-width: 470px;
     height: 75vh;
     min-height: 550px;
+    max-height: 700px;
 }
 
 .whiteText { 
@@ -28,8 +29,6 @@
 .styleDiv {
     text-align: left;
     margin-left: auto;
-
-    padding-top: 10vh;
 }
 
 .styleAlignMarginSection {

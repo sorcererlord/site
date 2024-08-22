@@ -47,7 +47,8 @@
     display: flex;
 
     width: 75vw;
-    height: 10vh;
+    height: auto;
+    margin: 3vh;
 
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +113,8 @@
 }
 
 .positioning {
-    margin: auto;
+    margin-top: 34vh;
+    margin-bottom: auto;
 }
 
 @media all and (max-width: 1366px) {

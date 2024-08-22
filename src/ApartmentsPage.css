@@ -43,8 +43,6 @@
 
 .apartment-wrapper {
     display: flex;
-
-    width: 75vw;
 }
 
 .apartmentRight {
@@ -60,22 +58,26 @@
     align-self: center;
 }
 
-.room1 {
-    width: 20vw;
-    min-width: 360px;
-    height: 31vh;
+.room1, .room2 {
+    width: 30vw;
+    min-width: 472px;
+    height: 34vh;
     min-height: 430px;
 }
 
-.room2 {
-    width: 20vw;
-    min-width: 360px;
-    height: 31vh;
-    min-height: 430px;
-}
 
 .characteristicsH2 {
     text-align: left;
+}
+
+@media all and (max-width: 1366px) {
+    .room1, .room2 {
+        width: 40vw;
+    }
+
+    .apartmentLeft, .apartmentRight {
+        width: 45%;
+    }
 }
 
 @media all and (max-width: 900px) {

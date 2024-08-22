@@ -19,7 +19,7 @@ function Apartments() {
         <>
         <div className="mainContainer apartment" id='apartments'>
             {isOpen &&  <Modal handleClose={closeModal} isOpen={isOpen}></Modal> }
-            <div className="apartment-wrapper">
+            <div className="main-wrapper apartment-wrapper">
                 <div className="textBlock apartmentRight" >
                     <h2>Апартаменты</h2>
 
@@ -37,7 +37,7 @@ function Apartments() {
         </div>
 
         <div className="mainContainer apartment">
-            <div className="apartment-wrapper">
+            <div className="main-wrapper apartment-wrapper">
                 <BlurredImage src={image1} alt='room' className="room2" />
                 <div className="textBlock apartmentLeft">
                     <h2>Пентхаусы</h2>
