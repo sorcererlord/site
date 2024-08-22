@@ -5,13 +5,7 @@
 }
 
 .style-wrapper {
-    display: flex;
-
-    padding-top: 16.5vh;
-    padding-bottom: 16.5vh;
-
-    width: 75vw;
-
+    padding-top: 20vh;
 }
 
 .fiImage {
@@ -69,8 +63,7 @@
 
 .advContainer {
     background-color: #fafafa;
-    justify-content: left;
-    height: 35vh;
+    height: auto;
     min-height: 400px;
 }
 
@@ -78,7 +71,6 @@
     width: 30vw;
     min-width: 500px;
     text-align: left;
-    margin-right: 12.5vw;
 
     align-self: center;
     
@@ -126,19 +118,36 @@
 
     align-self: center;
     margin-bottom: 20vh;
-    margin-left: 12.5vw;
 }
 
+.adv-wrapper {
+    width: 75vw;
+
+    display: flex;
+    justify-content: left;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+@media all and (max-width: 1366px) {
+    .adv-wrapper {
+        width: 95vw;
+    }
+}
 
 @media all and (max-width: 900px) {
     .advH2 {
         margin: 0;
-        margin-left: 3vw;
-        align-self: center;
+        align-self: baseline;
     }
 
     .lux-wrapper {
         width: 95vw;
+    }
+
+    .style-wrapper {
+        flex-direction: column;
     }
 
     .dashed {
@@ -167,15 +176,11 @@
 
     .styleDiv {
         padding: 0;
-        grid-row: 1;
+        order: 1;
+        margin-left: 0;
 
-    }
+        width: 100%;
 
-    .modifiedOverflow {
-        width: 95vw;
-
-        margin-right: 5vw;
-        margin-left: 5vw;
     }
 
     .styleAlignMarginH2 {
@@ -194,6 +199,10 @@
         margin: auto;
 
         min-width: 320px;
+    }
+
+    .style-zoom {
+        order: 2;
     }
 
     .listContainer {

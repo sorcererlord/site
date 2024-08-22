@@ -38,8 +38,13 @@
 }
 
 .loc-body {
-    width: 30vw;
+    width: 50%;
     margin-left: auto;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .tImage {
@@ -78,17 +83,7 @@
 }
 
 .project-wrapper {
-    width: 75vw;
-    min-width: 985px;
-
     padding-top: 20vh;
-    padding-bottom: 20vh;
-
-    display: flex;
-
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
 }
 
 #project {
@@ -112,12 +107,9 @@
 
     .project-wrapper { 
         overflow: auto;
-        display: flex;
         flex-direction: column;
-        align-items: start;
 
         width: 95vw;
-        min-width: 0;
 
         height: 100%;
     }

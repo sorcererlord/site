@@ -32,10 +32,10 @@ export default function FirstSegment() {
              
   return (
     <div className='mainContainer fImageContainer'>
-        {isOpen && <Modal handleClose={closeModal} isOpen={isOpen} />}
+    {isOpen && <Modal handleClose={closeModal} isOpen={isOpen} />}
 
-        {isTablet ? sidebar && <Sidebar handleClose={hideSidebar} sidebar={sidebar}/> : <Sidebar handleClose={hideSidebar} sidebar={sidebar}/>}
-
+    {isTablet ? sidebar && <Sidebar handleClose={hideSidebar} sidebar={sidebar}/> : <Sidebar handleClose={hideSidebar} sidebar={sidebar}/>}
+      <div className='intrd-wrapper'>
         <div className='introductory-header'>
           {isTablet ? 
           <FaBars onClick={showSidebar} className='sidebar-button'/> 
@@ -52,12 +52,13 @@ export default function FirstSegment() {
 
             {Redirect}
           </section>
-       </div>
+        </div>
 
         <section className='positioning'>
           <h1 className='intrdMediaH2'>ПОКЛОННАЯ, 9</h1>
-          {TabletSignup}
-        </section>
+        {TabletSignup}
+      </section>
     </div>
+  </div>
  );
 }

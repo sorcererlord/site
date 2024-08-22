@@ -37,7 +37,7 @@ function AboutProject() {
 
     return (
     <div id='project' className='mainContainer'>
-        <div className="project-wrapper">
+        <div className="main-wrapper project-wrapper">
             <div className='alignLeftPadded textBlock projectDiv'>
                 <h2>О проекте</h2>
                 <p>
