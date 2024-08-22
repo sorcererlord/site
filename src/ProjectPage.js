@@ -76,8 +76,8 @@ function AboutProject() {
 function Location() {
     return (
         <div className="mainContainer grid locContainer">
-            <div className="locDiv">
-                <div className="loc-wrapper">
+            <div className="main-wrapper loc-wrapper">
+                <div className="loc-content">
                     <section className="loc-header">
                         <h2>ЦАО Пресненский район</h2>
                         <h3>ул. Поклонная, 9</h3>
@@ -96,7 +96,7 @@ function Location() {
                         </p>
                     </section>
                 </div>
-                
+
                 <BlurredImage src={mapImage} alt="mapScreenshot" className="tImage" />
             </div>
         </div>
