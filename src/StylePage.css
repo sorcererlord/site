@@ -104,7 +104,7 @@
 }
 
 .lobImage {
-    width: 75vw;
+    width: 100%;
     min-width: 900px;
     height: auto;
 
@@ -131,6 +131,9 @@
 
 @media all and (max-width: 1366px) {
     .adv-wrapper {
+        width: 95vw;
+    }
+    .lux-wrapper {
         width: 95vw;
     }
 }
