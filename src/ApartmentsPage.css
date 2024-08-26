@@ -1,9 +1,11 @@
-.charContainer {
-    padding-bottom: 16.5vh;
+a.charWrapper {
+    width: 75vw;
+    padding-bottom: 20vh;
 }
 
 .charWrapper {
     width: 75vw;
+    padding-bottom: 20vh;
 }
 
 
@@ -24,8 +26,8 @@
         width: 45vw;
     }
     
-    padding-bottom: 1vh;
-    padding-top: 2vh;
+    padding-bottom: 3.5vh;
+    padding-top: 3.5vh;
 }
 
 .left {
@@ -34,8 +36,6 @@
 }
 
 .apartment {
-    padding-bottom: 16.5vh;
-
     div {
         text-align: left;
     }
@@ -77,6 +77,10 @@
 
     .apartmentLeft, .apartmentRight {
         width: 45%;
+    }
+
+    .charWrapper {
+        width: 95vw;
     }
 }
 
@@ -130,7 +134,7 @@
     }
 
     .charWrapper {
-        max-height: 800px;
+        height: min-content;
     }
 
     .apartment-wrapper {
@@ -141,23 +145,15 @@
         margin: 0;
 
         margin-top: 0;
-        margin-left: 5vw;
-        margin-right: 5vw;
 
         width: 95vw;
         
         grid-row: 2;
     }
 
-    .apartmentRight {
-        margin-bottom: 20vh;
-    }
-
     .room1, .room2 {
         padding: 0;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 0;
+
         align-self: flex-end;
 
         width: 95vw;

@@ -1,7 +1,7 @@
 .signupContainer {
     background-color: black;
     height: 50vh;
-    min-height: 600px;
+
 }
 
 .querySection {
@@ -9,6 +9,7 @@
     flex-direction: column;
     
     text-align: left;
+    margin-right: auto;
 
     width: 17vw;
     min-width: 500px;
@@ -16,7 +17,6 @@
     h2 { 
         color: white;
         margin-bottom: 4vh;
-        font-size: 35px;
     }
 
     ::placeholder {
@@ -64,7 +64,6 @@
     min-width: 200px;
 
     h2 {
-        font-size: 35px;
         color: white;
     }
 
@@ -85,11 +84,16 @@
 }
 
 .queryContainer {
+    width: 75vw;
     display: flex;
     flex-direction: row;
 }
 
-
+@media all {
+    .queryContainer {
+        width: 95vw;
+    }
+}
 
 @media all and (max-width: 900px) {
     .queryContainer {

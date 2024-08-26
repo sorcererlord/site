@@ -33,11 +33,11 @@
 
 .styleAlignMarginSection {
     margin-left: auto;
-    width: auto;
+    width: 50%;
 }
 
 .styleAlignMarginH2 {
-    width: auto;
+    width: 50%;
     min-width: 450px;
 
 }
@@ -51,13 +51,11 @@
     align-items: center;
 }
 
-.luxContainer {
-    padding-top: 16.5vh;
-    padding-bottom: 16.5vh;
-}
+
 
 .lux-wrapper {
     width: 75vw;
+    padding-bottom: 20vh;
 }
 
 .advContainer {
@@ -188,10 +186,12 @@
     .styleAlignMarginH2 {
         margin: 0;
         min-width: 320px;
+        width: auto;
     }
     .styleAlignMarginSection {
         margin: 0;
         min-width: 320px;
+        width: auto;
     }
 
     .fiImage {
@@ -217,8 +217,7 @@
 
 @media all and (max-width: 640px) {
     .luxContainer {
-        height: 50vh;
-        min-height: 1000px;
+        height: min-content;
     }
 
     .lobImage { 
