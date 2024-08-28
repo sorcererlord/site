@@ -8,9 +8,9 @@ import axios from "axios";
 
 function Modal({isOpen, handleClose }) {
   const initialState =  {
-      name: '',
-      phone: '',
-      check: false
+    name: '',
+    phone: '',
+    check: false
   }
   
   const [post, setPost] = useState(initialState)

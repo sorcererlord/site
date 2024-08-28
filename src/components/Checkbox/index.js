@@ -1,10 +1,19 @@
 import { useState } from "react";
 import './CheckboxStyles.css'
 
-export default function Checkbox({children, blackCheck, modalCheck, onChange}) {
+export default function Checkbox({children, blackCheck, modalCheck, onChange, changeToFalse}) {
     const [checked, setChecked] = useState(false)
     const handleCheck = (e) => {
         setChecked(e.target.checked);
+
+        if (typeof changeToFalse === 'function') {
+            if  (changeToFalse() === true) {
+                setChecked(false)
+            }
+            else {
+                setChecked(true)
+            }
+        }
 
         if (typeof onChange === 'function') {
             onChange(e.target.checked)

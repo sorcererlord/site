@@ -29,8 +29,13 @@
         border: 0.01vw solid white;
         color: white;
 
-        width: 4.4vw;
-        min-width: 75px;
+        &:hover {
+            color: black;
+            background-color: #aca9a9;
+        }
+
+        width: 6vw;
+        min-width: 100px;
 
         margin-top: 0.7vh;
 
@@ -85,6 +90,7 @@
     width: 75vw;
     display: flex;
     flex-direction: row;
+    padding-bottom: 5vh;
 }
 
 @media all and (max-width: 1366px) {
