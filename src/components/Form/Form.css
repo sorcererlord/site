@@ -204,3 +204,15 @@
     transform-origin: 50% 50%;
     transform: rotate(35deg);
 }
+
+.form-warning {
+    font-family: "SFProDisplay";
+
+    color:#ff4747;
+
+    transition: color 200ms linear;
+}
+
+.highlight-warning {
+    color: #ff0000;
+}

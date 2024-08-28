@@ -10,6 +10,8 @@ function Form() {
     phone: '',
     check: false
   }
+
+  const [highlight, setHighlight] = useState(false)
   
   const [post, setPost] = useState(initialState)
   const [warning, setWarning] = useState(false)
@@ -18,10 +20,6 @@ function Form() {
   const handleCheck = (e) => {
     setChecked(e.target.checked)
     setPost({...post, check: checked})
-  }
-
-  const handleChange = (e) => {
-
   }
 
   const handleInputClick = (e) => {
@@ -38,9 +36,18 @@ function Form() {
     e.preventDefault()
 
     if (post.name === '' || (post.phone === '' || post.phone === '+7')) {
-      setWarning(true)
+      setWarning(true);
+
+      setHighlight(true);
+      setTimeout(() => {
+        setHighlight(false)
+      }, 300);
+
+
       return;
     }
+
+    setWarning(false)
 
     axios.post('http://localhost:8000/posts', post)
     .then(response => console.log(response.data))
@@ -65,6 +72,8 @@ function Form() {
                     <p>Даю согласие на <span>обработку персональных данных</span></p>           
                 </section>
             </label>
+
+            {warning ? <span className={highlight ? 'form-warning highlight-warning' : 'form-warning' }>Заполните поля!</span> : null}
 
             <button className="query">Оставить заявку</button>
           </form>
