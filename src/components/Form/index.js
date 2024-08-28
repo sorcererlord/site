@@ -2,6 +2,8 @@ import {useState} from "react";
 import axios from "axios";
 import Checkbox from "../Checkbox";
 
+import './Form.css'
+
 function Form() {
   const initialState =  {
     name: '',
@@ -11,9 +13,15 @@ function Form() {
   
   const [post, setPost] = useState(initialState)
   const [warning, setWarning] = useState(false)
+  const [checked, setChecked] = useState(false)
+
+  const handleCheck = (e) => {
+    setChecked(e.target.checked)
+    setPost({...post, check: checked})
+  }
 
   const handleChange = (e) => {
-    setPost({...post, check: e})
+
   }
 
   const handleInputClick = (e) => {
@@ -24,10 +32,6 @@ function Form() {
 
   const handleInput = async e => {
     setPost({...post, [e.target.name]: e.target.value})
-  }
-
-  const handleCheckReset = () => {
-    
   }
 
   const handleSubmit = e => {
@@ -42,7 +46,7 @@ function Form() {
     .then(response => console.log(response.data))
     .catch(e => console.log(e));
 
-    handleCheckReset()
+    setChecked(false)
     setPost(initialState)
   }
 
@@ -55,9 +59,12 @@ function Form() {
             <input className="queryInput" type="text" name="name" placeholder="Имя" value={post.name} onChange={handleInput}/>
             <input className="queryInput" type="text" name="phone" placeholder="Телефон" value={post.phone} onChange={handleInput} onFocus={handleInputClick}/>
 
-            <Checkbox onChange={handleChange} changeToFalse={handleCheckReset}>
-              Даю согласие на <span>обработку персональных данных</span>
-            </Checkbox>
+            <label style={{color: 'white'}} className={'checkbox-wrapper'}>
+                <section>
+                    <input name="check" className={'checkbox-element'} type='checkbox' checked={checked} onChange={handleCheck} Reset/>
+                    <p>Даю согласие на <span>обработку персональных данных</span></p>           
+                </section>
+            </label>
 
             <button className="query">Оставить заявку</button>
           </form>
