@@ -1,7 +1,5 @@
 .signupContainer {
     background-color: black;
-    height: 50vh;
-
 }
 
 .querySection {
@@ -89,7 +87,7 @@
     flex-direction: row;
 }
 
-@media all {
+@media all and (max-width: 1366px) {
     .queryContainer {
         width: 95vw;
     }
@@ -98,6 +96,7 @@
 @media all and (max-width: 900px) {
     .queryContainer {
         flex-direction: column;
+        padding-bottom: 2vh;
     }
 
     .querySection, .querySection1 {

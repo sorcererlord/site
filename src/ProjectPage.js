@@ -9,20 +9,20 @@ import Tbody from "./components/Tbody";
 import { useMatchMedia } from "./hooks/useMatchMedia";
 
 const arr = [
-    <text>5 <span className="thesis2">км</span></text>,    <h3>От Кремля</h3>,
-    <text>90</text>,    <h3>Апартаментов</h3>,
-    <text>7</text>,    <h3>Этажей</h3>,
-    <text>5 <span className="thesis2">м²</span></text>,    <h3>Потолки</h3>
+    <>5 <span className="thesis2">км</span></>,    <h3>От Кремля</h3>,
+    <>90</>,    <h3>Апартаментов</h3>,
+    <>7</>,    <h3>Этажей</h3>,
+    <>5 <span className="thesis2">м²</span></>,    <h3>Потолки</h3>
 ]
 
 const arrMobile = [
-    <text>5 <span className="thesis2">км</span></text>,    <h3>От Кремля</h3>,
-    <text>90</text>,    <h3>Апартаментов</h3>,
+    <>5 <span className="thesis2">км</span></>,    <h3>От Кремля</h3>,
+    <>90</>,    <h3>Апартаментов</h3>,
 ]
 
 const arrMobile1 = [
-    <text>7</text>,    <h3>Этажей</h3>,
-    <text>5 <span className="thesis2">м²</span></text>,    <h3>Потолки</h3>
+    <>7</>,    <h3>Этажей</h3>,
+    <>5 <span className="thesis2">м²</span></>,    <h3>Потолки</h3>
 ]
 
 const content = createObject(arr);
@@ -55,8 +55,8 @@ function AboutProject() {
                     <tbody>
                         {isMobile ? 
                             <React.Fragment>
-                                <Tbody data={contentMobile} columns={true} thClass='thesis1 trMediaPadding' />
-                                <Tbody data={contentMobile1} columns={true} thClass='thesis1' />
+                                <Tbody data={contentMobile} columns={true} thClass='thesis1 trMediaPadding' tdClass='trMediaPadding'/>
+                                <Tbody data={contentMobile1} columns={true} thClass='thesis1 trMediaPadding' tdClass='trMediaPadding'/>
                             </React.Fragment>
                             
                          : <Tbody data={content} columns={true} thClass='thesis1' />

@@ -212,6 +212,15 @@
         min-width: 320px;
         width: 100vw;
     }
+    .adv-wrapper{
+        flex-direction: column;
+    }
+    .advH2 {
+        margin-bottom: 2vh;
+    }
+    .dashed {
+        column-gap: 0;
+    }
 
 }
 
@@ -234,9 +243,6 @@
         height: 35vh;
     }
 
-    .advContainer {
-        min-height: 500px;
-    }
 
     ul.dashed {
         column-count: 1;

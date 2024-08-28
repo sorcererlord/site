@@ -59,9 +59,9 @@ a.charWrapper {
 }
 
 .room1, .room2 {
-    width: 30vw;
+    width: auto;
     min-width: 472px;
-    height: 34vh;
+    height: auto;
     min-height: 430px;
 }
 

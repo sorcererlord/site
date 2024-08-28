@@ -184,7 +184,7 @@ code {
 
 @media all and (max-width: 1024px) {
   .textBlock {
-    min-width: 400px;
+    min-width: 350px;
   }
 
 }

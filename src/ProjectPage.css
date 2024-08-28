@@ -222,12 +222,8 @@
     }
 
     .projectTable {
-        width: 40vw;
+        width: 100%;
         min-width: 420px;
         padding: 0;
-    }
-
-    .trMediaPadding {
-        padding-right: 30vw;
     }
 }
