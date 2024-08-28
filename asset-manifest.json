@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.422753a6.css",
-    "main.js": "/site/static/js/main.f6680630.js",
+    "main.css": "/site/static/css/main.0c54cb74.css",
+    "main.js": "/site/static/js/main.8d3f2454.js",
     "static/media/image1.png": "/site/static/media/image1.c428d42d7a08d26fcf04.png",
     "static/media/Rectangle 90.png": "/site/static/media/Rectangle 90.401f030e68895da02c24.png",
     "static/media/Rectangle 27.png": "/site/static/media/Rectangle 27.a53571d1f8141d706c77.png",
@@ -13,11 +13,11 @@
     "static/media/Rectangle 92.png": "/site/static/media/Rectangle 92.9cd3f93b86bb3a9563cc.png",
     "static/media/О проекте.png": "/site/static/media/О проекте.dff8d519c6ab17e38f18.png",
     "index.html": "/site/index.html",
-    "main.422753a6.css.map": "/site/static/css/main.422753a6.css.map",
-    "main.f6680630.js.map": "/site/static/js/main.f6680630.js.map"
+    "main.0c54cb74.css.map": "/site/static/css/main.0c54cb74.css.map",
+    "main.8d3f2454.js.map": "/site/static/js/main.8d3f2454.js.map"
   },
   "entrypoints": [
-    "static/css/main.422753a6.css",
-    "static/js/main.f6680630.js"
+    "static/css/main.0c54cb74.css",
+    "static/js/main.8d3f2454.js"
   ]
 }
